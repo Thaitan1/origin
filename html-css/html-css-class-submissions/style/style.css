@@ -35,5 +35,7 @@ header .container .menu .top-menu .contact-information {
   display: flex;
 }
 header .container .menu .top-menu .contact-information .content-box {
-  margin-right: 20px;
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid black;
 }
