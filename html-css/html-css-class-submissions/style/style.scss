@@ -7,7 +7,7 @@ header {
         align-items: center;
         justify-content: space-between;
         gap: 70px;
-
+       
         .menu-bars {
             border: none;
             font-size: 25px;
@@ -20,11 +20,24 @@ header {
         
         .menu {
             display: none;
-        
+            flex: 1;
         
             @media (min-width: 992px) {
                 display: block;
             }
-        }
+
+            .top-menu {
+                display: flex;
+                justify-content: space-between;
+
+                .contact-information {
+                    display: flex;
+
+                    .content-box {
+                        margin-right: 20px;
+                    }    
+                }
+            }
+        }    
     }
 }            

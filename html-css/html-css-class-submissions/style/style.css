@@ -20,9 +20,20 @@ header .container .menu-bars {
 }
 header .container .menu {
   display: none;
+  flex: 1;
 }
 @media (min-width: 992px) {
   header .container .menu {
     display: block;
   }
+}
+header .container .menu .top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .menu .top-menu .contact-information {
+  display: flex;
+}
+header .container .menu .top-menu .contact-information .content-box {
+  margin-right: 20px;
 }
