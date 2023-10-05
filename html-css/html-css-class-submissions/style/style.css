@@ -26,6 +26,9 @@ header .container .menu-bars {
     display: none;
   }
 }
+header .container .menu-bars:hover {
+  color: lightgray;
+}
 header .container .menu {
   display: none;
   flex: 1;
@@ -38,11 +41,13 @@ header .container .menu {
 header .container .menu .top-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #DAD9D3;
 }
 header .container .menu .top-menu .contact-information {
   display: flex;
+  align-items: center;
 }
 header .container .menu .top-menu .contact-information .content-box {
   padding-right: 30px;
@@ -64,4 +69,34 @@ header .container .menu .top-menu .social-media a {
   color: #191919;
   margin-left: 10px;
   font-size: 1.1rem;
+}
+header .container .menu .top-menu .social-media a:hover {
+  color: lightgray;
+}
+header .container .menu .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+header .container .menu .main-menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  postition: relative;
+}
+header .container .menu .main-menu nav a.active {
+  font-weight: 700;
+}
+header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 700;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
