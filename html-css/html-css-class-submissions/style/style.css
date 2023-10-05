@@ -6,6 +6,25 @@ html, body {
   font-weight: 400;
 }
 
+.btn-login {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.btn-login i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-login:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -40,14 +59,24 @@ header .container .menu {
 }
 header .container .menu .top-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #DAD9D3;
 }
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+  }
+}
 header .container .menu .top-menu .contact-information {
-  display: flex;
+  display: none;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+  }
 }
 header .container .menu .top-menu .contact-information .content-box {
   padding-right: 30px;
@@ -84,7 +113,7 @@ header .container .menu .main-menu nav a {
   color: #191919;
   text-decoration: none;
   margin-right: 35px;
-  postition: relative;
+  position: relative;
 }
 header .container .menu .main-menu nav a.active {
   font-weight: 700;
