@@ -45,6 +45,21 @@ html, body {
   color: #F0EFE9;
 }
 
+.section-title {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  margin-bottom: 10px;
+  color: #F94D1C;
+}
+.section-title h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: #191919;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -216,4 +231,13 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   .showcase .container img {
     display: block;
   }
+}
+
+.POC-section .container .section-title {
+  text-align: center;
+}
+.POC-section .container .projects-and-cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
