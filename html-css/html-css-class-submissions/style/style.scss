@@ -30,6 +30,28 @@ html, body {
 
 }
 
+.btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 25px;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #191919;
+        color: #191919;   
+    }
+
+}
+
 .btn-learn-more {
     background-color: transparent;
     border: 1px solid #191919;
@@ -54,8 +76,15 @@ html, body {
 
 .section-title {
 
-    padding-top: 100px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    @media (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+
 
     p {
         margin-bottom: 10px;
@@ -68,6 +97,12 @@ html, body {
         font-size: 45px;
         color: #191919;
     }
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -271,22 +306,52 @@ header {
 
         .projects-and-cases {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 30px;
 
-            article {
-                img {
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;  
+            }
 
+            article {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                img {
+                    width: 100%;
+                    height: auto;
                 }
 
                 h3 {
+                    font-family: 'DM', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #DAD9D3
 
                 }
 
                 a {
+                    padding: 15px;
+                    display: block;
+                    text-align: right;
+                    font-family: 'inter' , sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #191919;
 
+                    i {
+                        margin-left: 3px;
+                    }
                 }
             }
+        }
+        
+        .center-content {
+            margin-top: 50;
+            margin-bottom: 90;
         }
     }
 

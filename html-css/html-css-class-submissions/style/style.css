@@ -26,6 +26,25 @@ html, body {
   color: #F0EFE9;
 }
 
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-black:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
+}
+
 .btn-learn-more {
   background-color: transparent;
   border: 1px solid #191919;
@@ -46,8 +65,14 @@ html, body {
 }
 
 .section-title {
-  padding-top: 100px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
 }
 .section-title p {
   margin-bottom: 10px;
@@ -58,6 +83,12 @@ html, body {
   font-weight: 700;
   font-size: 45px;
   color: #191919;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -238,6 +269,45 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .POC-section .container .projects-and-cases {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
+}
+@media (min-width: 768px) {
+  .POC-section .container .projects-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.POC-section .container .projects-and-cases article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.POC-section .container .projects-and-cases article img {
+  width: 100%;
+  height: auto;
+}
+.POC-section .container .projects-and-cases article h3 {
+  font-family: "DM", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+.POC-section .container .projects-and-cases article a {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #191919;
+}
+.POC-section .container .projects-and-cases article a i {
+  margin-left: 3px;
+}
+.POC-section .container .center-content {
+  margin-top: 50;
+  margin-bottom: 90;
 }
