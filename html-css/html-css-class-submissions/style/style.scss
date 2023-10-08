@@ -305,6 +305,20 @@ header {
     }
 }
 
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    a {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-right: 55px;
+        
+    }
+
+}
+
 .PAC-section {
 
     .container {
