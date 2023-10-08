@@ -74,6 +74,31 @@ html, body {
 
 }
 
+.btn-team {
+    background-color: #F9D783;
+    border: 1px solid #191919;
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 25px;
+
+    i {
+        margin-left: 17px;
+        margin-right: 5px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F9D783;   
+    }
+
+}
+
 .section-title {
 
     padding-top: 50px;
@@ -103,6 +128,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.end-content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 header {
@@ -306,15 +337,28 @@ header {
 }
 
 .companies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     a {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-right: 55px;
+        margin: 60px 30px;
+
+        img {
+            max-width: 210px;
+            min-width: 115px;
+            width: 100%;
+            height: auto;
         
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+            
+        }
+
     }
 
 }
@@ -385,6 +429,73 @@ header {
         }
     }
 
+}
+
+.meet-our-team {
+    background-color: #F9D783;
+
+    .container {
+        position: relative;
+
+        .content-box {
+            background-color: #F9D783;
+            padding-bottom: 70px;
+    
+            p {
+                color: red;
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                padding-top: 90px;
+                padding-bottom: 20px;
+            }
+    
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+            }
+        
+        }
+        
+        .end-content {
+            position: absolute;
+            right: 0;
+            top: 155px;
+        }
+
+        .content-flex {
+            display: flex;
+
+            .information-box {
+                padding-right: 20px;
+    
+                img {
+                    
+                }
+    
+                h4 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+    
+                }
+    
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+    
+                }
+    
+            }
+
+        }
+    }
+
+    .dot {
+        
+    }
 }
 
 .newsletter {
