@@ -131,9 +131,7 @@ html, body {
 }
 
 .end-content {
-    display: flex;
-    justify-content: center;
-    align-items: end;
+    padding-right: 20px;
 }
 
 header {
@@ -494,7 +492,8 @@ header {
     }
 
     .dot {
-        
+        padding-top: 45px;
+        padding-bottom: 65px;
     }
 }
 

@@ -114,9 +114,7 @@ html, body {
 }
 
 .end-content {
-  display: flex;
-  justify-content: center;
-  align-items: end;
+  padding-right: 20px;
 }
 
 header {
@@ -417,6 +415,11 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-size: 14px;
   font-weight: 500;
 }
+.meet-our-team .dot {
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+
 .newsletter {
   background-color: #F0EFE9;
   position: relative;
