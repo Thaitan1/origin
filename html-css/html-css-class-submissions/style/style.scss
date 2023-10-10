@@ -129,7 +129,7 @@ html, body {
     border: 1px solid #191919;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 6px 10px;
+    padding: 4px 10px;
     font-weight: 400;
     font-size: 25px;
     border-radius: 25px;
@@ -152,7 +152,7 @@ html, body {
     border: 1px solid #FFFFFF;
     color: #191919;
     text-decoration: none;
-    padding: 6px 10px;
+    padding: 4px 10px;
     font-weight: 400;
     font-size: 25px;
     border-radius: 25px;
@@ -456,9 +456,9 @@ header {
 }
 
 .our-services {
+    background-color: #F0EFE9;
 
     .container {
-        background-color: #F0EFE9;
         
         p {
             color: red;
@@ -479,59 +479,64 @@ header {
 
         .content-flex {
             display: flex;
+            padding-bottom: 45px;
 
             .service-box {
                 background-color: #FFFFFF;
                 margin-right: 25px;
+                display: inline;
 
                 p {
                     font-family: 'Inter', sans-serif;
                     color: #191919;
-                    font-size: 14px;
+                    font-size: 15px;
                     font-weight: 400;
+                    margin-left: 18px;
+                    margin-bottom: 35px;
+                    margin-top: -70px;
+                    margin-right: 18px;
                 }
 
                 h4 {
-
-                }
-
-                p {
-                    font-family: 'Inter', sans-serif;
-                    color: #191919;
-                    font-size: 14px;
-                    font-weight: 400;
+                    margin-left: 18px;
+                    margin-bottom: -80px;
+                    font-weight: 600;
                 }
 
                 a {
 
                 }
+                
             }
 
             .service-box-yellow {
                 background-color: #F9D783;
                 margin-right: 25px;
+                position: relative;
 
                 p {
                     font-family: 'Inter', sans-serif;
                     color: #191919;
-                    font-size: 14px;
+                    font-size: 15px;
                     font-weight: 400;
+                    margin-left: 18px;
+                    margin-bottom: 25px;
+                    margin-top: -70px;
+                    margin-right: 18px;
                 }
 
                 h4 {
-
-                }
-
-                p {
-                    font-family: 'Inter', sans-serif;
-                    color: #191919;
-                    font-size: 14px;
-                    font-weight: 400;
+                    margin-left: 18px;
+                    margin-bottom: -80px;
+                    font-weight: 600;
                 }
 
                 a {
-
+                    position: absolute;
+                    right: 30px;
+                    bottom: -40px;
                 }
+
             }
         }
 
