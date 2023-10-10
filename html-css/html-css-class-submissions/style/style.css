@@ -113,7 +113,7 @@ html, body {
   border: 1px solid #191919;
   color: #FFFFFF;
   text-decoration: none;
-  padding: 4px 10px;
+  padding: 3px 10px;
   font-weight: 400;
   font-size: 25px;
   border-radius: 25px;
@@ -133,7 +133,7 @@ html, body {
   border: 1px solid #FFFFFF;
   color: #191919;
   text-decoration: none;
-  padding: 4px 10px;
+  padding: 3px 10px;
   font-weight: 400;
   font-size: 25px;
   border-radius: 25px;
@@ -402,6 +402,10 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 
 .our-services {
   background-color: #F0EFE9;
+  min-height: 800px;
+}
+.our-services .container {
+  position: relative;
 }
 .our-services .container p {
   color: red;
@@ -425,7 +429,8 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .our-services .container .content-flex .service-box {
   background-color: #FFFFFF;
   margin-right: 25px;
-  display: inline;
+  padding-bottom: 80px;
+  position: relative;
 }
 .our-services .container .content-flex .service-box p {
   font-family: "Inter", sans-serif;
@@ -433,7 +438,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-size: 15px;
   font-weight: 400;
   margin-left: 18px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   margin-top: -70px;
   margin-right: 18px;
 }
@@ -441,6 +446,11 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   margin-left: 18px;
   margin-bottom: -80px;
   font-weight: 600;
+}
+.our-services .container .content-flex .service-box a {
+  position: absolute;
+  right: 30px;
+  bottom: 45px;
 }
 .our-services .container .content-flex .service-box-yellow {
   background-color: #F9D783;
@@ -465,8 +475,20 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .our-services .container .content-flex .service-box-yellow a {
   position: absolute;
   right: 30px;
-  bottom: -40px;
+  bottom: 45px;
 }
+.our-services .container .center-content a {
+  margin-bottom: 40px;
+}
+.our-services .container .line-position {
+  position: relative;
+}
+.our-services .container .line-position .background-lines {
+  position: absolute;
+  right: -300px;
+  bottom: -105px;
+}
+
 .PAC-section .container .section-title {
   text-align: center;
 }
