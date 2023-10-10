@@ -143,9 +143,9 @@ html, body {
   font-size: 0.9em;
 }
 .btn-mini-white:hover {
-  background-color: #FFFFFF;
+  background-color: #191919;
   border: 1px solid #191919;
-  color: #191919;
+  color: #F9D783;
 }
 
 .btn-services {
